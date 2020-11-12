@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2_2</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+  
+    <div class="container">
+        <header class="header">
+            <div id="head-title">
+                <h1>Header</h1>
+                </div>
+                
+                <h2 class="edges" id="txt1" style="font-weight:normal">
+                  TXT1TXT1TXT1TXT1TXT1
+               </h2>
+              
+        </header>
+       
+        <div class="sidebar-1">
+           <h2>
+      How to procrastinate?
+    </h2><p id="left-side-text">
+      
+      Effective procrastination is built around “active procrastination” or “productive procrastination” techniques. Strategies can include restructuring your tasks so that in putting off some work you actually get other valuable tasks done. You might also try pitting your task against your own boredom. (“You don’t have to write that email, but you can’t do anything else.”) Or you could default to certain helpful tasks, like organizing. In fact, active procrastination is often so productive that many people wouldn’t even call it procrastination. Here are some go-to strategies from success experts.
+
+      </p>
+      <p id="txt2">TXT2TXT2TXT2TXT2TXT2TXT2TXT2</p>
+      <textarea class="editArea" id="area1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</textarea>
+      <button class="editBtn" onclick="saveEdits('area1','sidebar-1');">Save</button>
+      <button class="editBtn" onclick="loadEdits('sidebar-1','left-side-text');">Load</button>
+      <br>
+      Username:<input type="text" id="username" value="NikitenkoDaryna"/><br><br>
+      Repo: <input type="text" id="repo" value="BCD"/>
+<button onclick="loadCommits()">Load Commits</button>
+<ul id="commits"></ul>
+
+<form class="" action="index.html" method="post"> 
+  <input type="text" name="array[]" value="" /><br> 
+ 
+  <button type="button" name="button" onclick="taskFive()"> 
+      Submit 
+  </button> 
+  <p id="numbers"></p>
+</form> 
+        </div>
+      <div class="pre-content">
+        <p id="txt3">TXT3TXT3TXT3TXT3TXT3TXT3TXT3TXT3</p>
+        <nav id="main-menu">
+               
+          <a href="index.html">Return to the main page</a>
+          <a href="img.html">Change Image</a>
+          
+          <a href="ol.html">OL</a>
+          <a href="ul.html">UL</a>
+        </nav>
+      </div>
+        <main class="content">
+          <h2 id="main-title">Make Sure You’re the Best Person for the Job</h2>
+        
+          <map name="ProfileImage">
+            <area shape="circle" coords="29,32,230,215" href="https://spunout.ie/education/article/procrastination">
+          </map>
+          <img usemap="#ProfileImage" id="profile" src="images/illustration-procrastination-time-work-cartoon_81534-1770.jpg" alt="profile">
+          <br>
+          <p id="content">
+  
+            Procrastination is a gift. It allows you an opportunity to assess if you are the right person to work on that task or strategy. Overcoming procrastination only takes 15 minutes. If you are really avoiding something you need to ask yourself: Is this something I MUST do?
+        
+            If the answer is no, determine can you delete it or delegate it. If you can delete it that’s fabulous. If you can delegate it, who is the best person to outsource it to? <em>—Neen James, Neenjames.com</em>
+        </p>
+        <p id="txt5" style="font-weight: normal;">TXT5</p>
+        <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+          Number: <input type="number" name="num">
+          <input type="submit" value="Submit">
+        </form>
+
+        <form id="choices">
+          <input type="radio" name="choice" value="2"> 2
+          <br>
+          <input type="radio" name="choice" value="4"> 4
+          <br>
+          <input type="radio" name="choice" value="5"> 5
+          <br>
+          <br>
+          <input type="button" id="btn" value="Show Selected Value">
+      </form>
+      <textarea class="editArea" id="area2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</textarea>
+      <button class="editBtn" value="save my edits" onclick="saveEdits('area2','main-side');">Save</button>
+      <button class="editBtn" onclick="loadEdits('main-side','content'); ">Load</button>
+      <p id = "GFG_UP" style = 
+            "font-size: 16px; font-weight: bold;">      
+        </p> 
+          
+        <button onclick = "gfg_Run()">  
+            Click here 
+        </button> 
+          
+        <p id = "GFG_DOWN" style = 
+            "color:green; font-size: 20px; font-weight: bold;"> 
+        </p> 
+      <script> 
+        var el_up = document.getElementById("GFG_UP"); 
+        var el_down = document.getElementById("GFG_DOWN"); 
+        var str = "Click on button to change the background color"; 
+      
+        el_up.innerHTML = str; 
+      
+        function changeColor(color) { 
+            document.body.style.background = color; 
+        } 
+          
+        function gfg_Run() { 
+            changeColor('yellow'); 
+            el_down.innerHTML = "Background Color changed"; 
+        }          
+    </script>  
+  
+        </main>
+      
+        <div class="sidebar-2">
+          <h2>Procrastination is not laziness</h2>
+          <br>
+          <img id="girl" src="images/7TUs.gif" alt="girl">
+          <p id="right-side-text">Procrastinators often put off doing things, leave them to the very last moment or sometimes even spend their time staring at the wall. However be careful, procrastination is not a synonym for lazy.
+    
+            Lazy people, simply don’t do anything and are just fine with it. Procrastinators, on the other hand, have the desire to actually do something but can’t force themselves to start.
+            
+            It's a good idea to start using the word procrastination instead of using the terms laziness or putting things off. It provides a much more accurate description of your situation. Only by giving the right name to your problem can you begin working on it.</p>
+            <p id="txt4">TXT4TXT4TXT4TXT4TXT4TXT4TXT4</p>
+            <textarea class="editArea" id="area3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</textarea>
+            <button class="editBtn" onclick="saveEdits('area3','sidebar-2');">Save</button>
+            <button class="editBtn" onclick="loadEdits('sidebar-2','right-side-text');">Load</button>
+        
+        </div>
+      <div class="sidebar-3 " > 
+      
+        <h2 id="txt6">Wanna Know More?TXT6</h2>
+        
+      
+        <nav><a href="https://www.verywellmind.com/the-psychology-of-procrastination-2795944">Click on me </a></nav></div>
+        <footer class="footer">
+          <div id="footer-title">
+            <h1 >Footer</h1>
+            </div>
+            <h2 class="edges" id="txt7">
+             TXT7TXT7TXT7TXT7TXT7TXT7TXT7
+           </h2>
+        </footer>
+      </div>
+        <script src="index.js"></script>
+        <script src="index2.js"></script>
+      
+        
+</body>
+</html>
